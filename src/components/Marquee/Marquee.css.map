@@ -1,0 +1,1 @@
+{"version":3,"sources":["Marquee.scss","../../styles/_variables.scss","Marquee.css"],"names":[],"mappings":"AAEA;EACE,iBCGkB;EDFlB,YAAA;EACA,oBAAA;EACA,kBAAA;AEDF;AFGE;EACE,gBAAA;EACA,kBAAA;AEDJ;AFIE;EACE,YAAA;EACA,gBAAA;EACA,kBAAA;AEFJ;AFII;EACE,YAAA;EACA,kBAAA;AEFN;AFIM;EACE,gBAAA;EACA,kBAAA;EACA,cCxBK;ACsBb;AFOE;EACE,mBAAA;AELJ","file":"Marquee.css"}

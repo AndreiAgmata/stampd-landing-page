@@ -1,0 +1,24 @@
+.shapes {
+  width: 100%;
+  width: 1400px;
+  margin: auto;
+  position: relative;
+  z-index: -1;
+}
+
+.shape-dark {
+  width: 51rem;
+  height: 37rem;
+  background-color: #6e72fc;
+  top: -14rem;
+  right: -17rem;
+  transform: rotate(-50deg);
+}
+.shape-light {
+  width: 51rem;
+  height: 37rem;
+  background-color: rgba(110, 115, 252, 0.3803921569);
+  top: -9rem;
+  right: -18rem;
+  transform: rotate(-50deg);
+}/*# sourceMappingURL=HeroShapes.css.map */

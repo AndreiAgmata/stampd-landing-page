@@ -1,0 +1,20 @@
+.faqs {
+  background-color: rgba(110, 114, 252, 0.1);
+  margin-top: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.faqs .content {
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+  padding-inline: 2rem;
+}
+.faqs .content .accordion {
+  filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.2078431373));
+}
+.faqs .content .accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.125);
+}/*# sourceMappingURL=Faqs.css.map */

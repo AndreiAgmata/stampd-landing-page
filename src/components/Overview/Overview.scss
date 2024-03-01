@@ -1,0 +1,9 @@
+@use "../../styles/variables" as v;
+
+.overview {
+  max-width: v.$wrapper-max-width;
+  margin: auto;
+  padding-inline: 2rem;
+
+  
+}

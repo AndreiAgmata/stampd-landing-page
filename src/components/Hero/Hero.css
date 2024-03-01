@@ -1,0 +1,27 @@
+.hero {
+  max-width: 1100px;
+  height: calc(100vh - 5rem);
+  margin: auto;
+}
+.hero .content {
+  padding-top: min(35vw, 13rem);
+}
+.hero .content .text .heading {
+  font-size: clamp(2.25rem, 5.5vw, 3.5rem);
+}
+.hero .content .text .heading .coloured {
+  color: #6e72fc;
+}
+@media (max-width: 767px) {
+  .hero .content .text .subheading {
+    padding-right: 4rem;
+  }
+}
+.hero .content .image-wrapper {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero .content .image-wrapper img {
+  filter: drop-shadow(5px 5px 10px rgba(34, 34, 34, 0.4078431373));
+}/*# sourceMappingURL=Hero.css.map */

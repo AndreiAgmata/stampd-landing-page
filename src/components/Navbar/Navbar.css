@@ -1,0 +1,15 @@
+.navBar {
+  max-width: 1100px;
+  height: 5rem;
+  margin-inline: auto;
+}
+.navBar .logo {
+  font-weight: 800;
+  color: #6e72fc;
+  letter-spacing: -2px;
+}
+.navBar .links {
+  color: #0e2540;
+  mix-blend-mode: multiply;
+  opacity: 0.9;
+}/*# sourceMappingURL=Navbar.css.map */

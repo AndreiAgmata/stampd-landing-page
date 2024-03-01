@@ -1,0 +1,19 @@
+@use "../../styles/variables" as v;
+
+.navBar {
+  max-width: v.$wrapper-max-width;
+  height: 5rem;
+  margin-inline: auto;
+
+  .logo {
+    font-weight: 800;
+    color: v.$main-color;
+    letter-spacing: -2px;
+  }
+
+  .links {
+    color: #0e2540;
+    mix-blend-mode: multiply;
+    opacity: 0.9;
+  }
+}

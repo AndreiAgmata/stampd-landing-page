@@ -1,0 +1,34 @@
+@use "../../styles/variables" as v;
+
+.marquee {
+  max-width: v.$wrapper-max-width;
+  margin: auto;
+  padding-inline: 2rem;
+  margin-block: 4rem;
+
+  .left-text {
+    margin-bottom: 0;
+    font-size: 4.25rem;
+  }
+
+  .items {
+    height: 5rem;
+    overflow: hidden;
+    position: relative;
+
+    .item {
+      height: 5rem;
+      position: relative;
+
+      h1 {
+        margin-bottom: 0;
+        font-size: 4.25rem;
+        color: v.$main-color;
+      }
+    }
+  }
+
+  .items li:first-child {
+    visibility: visible;
+  }
+}

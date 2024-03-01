@@ -1,0 +1,45 @@
+@use "../../styles/variables" as v;
+
+.footer {
+  background-color: v.$main-color;
+  padding-block: 8rem;
+  .content {
+    max-width: v.$wrapper-max-width;
+    margin: auto;
+    padding-inline: 2rem;
+
+    .subtext {
+      color: rgba(231, 231, 231, 0.967);
+    }
+
+    input {
+      border-color: transparent;
+    }
+
+    .subscribe-btn {
+      height: 100%;
+      color: v.$main-color;
+    }
+
+    .links {
+      .logo {
+        font-weight: 800;
+        letter-spacing: -2px;
+      }
+
+      a {
+        font-size: 0.85rem;
+      }
+    }
+
+    .image-wrapper {
+      width: 20rem;
+      height: 30rem;
+
+      img {
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
+        filter: drop-shadow(5px 5px 10px #22222268);
+      }
+    }
+  }
+}

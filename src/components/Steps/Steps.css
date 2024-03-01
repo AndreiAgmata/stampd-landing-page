@@ -1,0 +1,14 @@
+.steps {
+  background-color: rgba(110, 114, 252, 0.1);
+}
+.steps .content {
+  max-width: 1100px;
+  margin: auto;
+  padding-inline: 2rem;
+}
+@media (max-width: 576px) {
+  .steps .content .arrow {
+    transform: rotate(90deg);
+    margin-bottom: 1rem;
+  }
+}/*# sourceMappingURL=Steps.css.map */

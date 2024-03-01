@@ -1,0 +1,33 @@
+.footer {
+  background-color: #6e72fc;
+  padding-block: 8rem;
+}
+.footer .content {
+  max-width: 1100px;
+  margin: auto;
+  padding-inline: 2rem;
+}
+.footer .content .subtext {
+  color: rgba(231, 231, 231, 0.967);
+}
+.footer .content input {
+  border-color: transparent;
+}
+.footer .content .subscribe-btn {
+  height: 100%;
+  color: #6e72fc;
+}
+.footer .content .links .logo {
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+.footer .content .links a {
+  font-size: 0.85rem;
+}
+.footer .content .image-wrapper {
+  width: 20rem;
+  height: 30rem;
+}
+.footer .content .image-wrapper img {
+  filter: drop-shadow(5px 5px 10px rgba(34, 34, 34, 0.4078431373));
+}/*# sourceMappingURL=Footer.css.map */

@@ -1,0 +1,26 @@
+@use "../../styles/variables" as v;
+
+.faqs {
+  background-color: v.$main-light;
+  margin-top: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  .content {
+    max-width: v.$wrapper-max-width;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    padding-inline: 2rem;
+
+    .accordion {
+      -webkit-filter: drop-shadow(5px 5px 5px #222);
+      filter: drop-shadow(5px 5px 5px #22222235);
+    }
+
+    .accordion-button:focus {
+      box-shadow: none;
+      border-color: rgba(0, 0, 0, 0.125);
+    }
+  }
+}
