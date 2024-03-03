@@ -19,17 +19,21 @@ function Footer() {
               be frequently updated. Subscribe to our email list to get notified
               about new app changes
             </p>
-            <div className="email-input mt-5 d-flex flex-row justify-content-start align-items-center gap-3">
-              <input
-                type="text"
-                id="email"
-                name="email"
-                className="p-2 px-4 rounded-pill flex-grow-1 fw-medium"
-                placeholder="Enter your email"
-              />
-              <button type="button" className="btn btn-light subscribe-btn">
-                Subscribe
-              </button>
+            <div className="email-input mt-5 row w-100 g-3">
+              <div className="col-12 col-sm-9">
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  className="p-2 ps-3 rounded-pill flex-grow-1 fw-medium w-100"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div className="col">
+                <button type="button" className="btn btn-light subscribe-btn">
+                  Subscribe
+                </button>
+              </div>
             </div>
           </div>
           <div className="col d-none d-md-flex justify-content-center">
