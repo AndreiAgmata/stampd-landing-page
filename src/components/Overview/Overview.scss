@@ -5,5 +5,12 @@
   margin: auto;
   padding-inline: 2rem;
 
-  
+  .image-wrapper {
+    width: 25rem;
+    height: auto;
+
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+  }
 }

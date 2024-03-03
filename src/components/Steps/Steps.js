@@ -54,7 +54,7 @@ function Steps() {
                   width={150}
                   height={65}
                   size={"small"}
-                  color={"#6EB9FC"}
+                  color={"#B16EFC"}
                 />
               </div>
               <div

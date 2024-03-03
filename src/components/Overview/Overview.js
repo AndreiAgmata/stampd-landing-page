@@ -19,11 +19,8 @@ function Overview() {
             our contactless and engaging platform.
           </p>
         </div>
-        <div className="image col-12 col-md-6 d-flex justify-content-center position-relative">
-          <div
-            className="image-wrapper position-relative  d-flex justify-content-center"
-            style={{ width: "25rem", height: "25rem" }}
-          >
+        <div className="image col-12 col-md-6 d-flex justify-content-center position-relative mb-4">
+          <div className="image-wrapper position-relative  d-flex justify-content-center">
             <Lottie animationData={data} loop={true} />
           </div>
           <div
@@ -39,20 +36,17 @@ function Overview() {
           <h2 className="fw-bold fs-2 mb-4">Track Rewards Effortlessly</h2>
           <p className="lh-lg">
             Our intuitive system simplifies reward tracking for business owners.
-            Track you weekly, monthly, and yearly activity and make adjustments
+            Track your weekly, monthly, and yearly activity and make adjustments
             on your business to increase customer engagement.
           </p>
         </div>
-        <div className="image col-12 col-md-6 position-relative">
-          <div
-            className="image-wrapper position-relative  d-flex justify-content-center"
-            style={{ width: "25rem", height: "25rem" }}
-          >
+        <div className="image col-12 col-md-6 d-flex justify-content-center position-relative mb-4">
+          <div className="image-wrapper position-relative  d-flex justify-content-center">
             <Lottie animationData={animation2} loop={true} />
           </div>
           <div
             className="shape-wrapper position-absolute opacity-25 "
-            style={{ bottom: 0, left: -75, zIndex: -1 }}
+            style={{ bottom: 0, left: -50, zIndex: -1 }}
           >
             <Dots height={200} width={200} size={"large"} color={"#6e72fc"} />
           </div>
