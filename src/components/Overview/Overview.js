@@ -20,18 +20,18 @@ function Overview() {
           </p>
         </div>
         <div className="image col-12 col-md-6 d-flex justify-content-center position-relative">
-          {/* <div
+          <div
             className="image-wrapper position-relative  d-flex justify-content-center"
             style={{ width: "25rem", height: "25rem" }}
           >
             <Lottie animationData={data} loop={true} />
-          </div> */}
-          {/* <div
+          </div>
+          <div
             className="shape-wrapper position-absolute opacity-25 "
             style={{ bottom: 0, left: 0, zIndex: -1 }}
           >
             <Dots height={200} width={200} size={"large"} color={"#6e72fc"} />
-          </div> */}
+          </div>
         </div>
       </div>
       <div className="item row d-flex flex-column-reverse flex-md-row-reverse mb-4">
@@ -44,7 +44,7 @@ function Overview() {
           </p>
         </div>
         <div className="image col-12 col-md-6 position-relative">
-          {/* <div
+          <div
             className="image-wrapper position-relative  d-flex justify-content-center"
             style={{ width: "25rem", height: "25rem" }}
           >
@@ -55,7 +55,7 @@ function Overview() {
             style={{ bottom: 0, left: -75, zIndex: -1 }}
           >
             <Dots height={200} width={200} size={"large"} color={"#6e72fc"} />
-          </div> */}
+          </div>
         </div>
       </div>
     </section>

@@ -58,9 +58,12 @@ function Footer() {
           </div>
         </div>
         <div className="row mt-5">
-          <div className="links mt-5 d-flex flex-row justify-content-between align-items-center gap-5">
-            <p className="logo text-white fs-1 mb-0">stampd</p>
-            <div className="items d-flex gap-4">
+          <div className="links mt-5 row">
+            <div className="col-12">
+              <p className="logo text-white fs-1 mb-0">stampd</p>
+            </div>
+
+            <div className="items d-flex gap-4 col-12">
               <Link href={""} className="text-white fw-medium">
                 Terms & Conditions
               </Link>
