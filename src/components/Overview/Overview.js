@@ -28,9 +28,9 @@ function Overview() {
           </div>
           <div
             className="shape-wrapper position-absolute opacity-25 "
-            style={{ bottom: 0, left: 0, zIndex: -1 }}
+            style={{ bottom: 0, left: -100, zIndex: -1 }}
           >
-            <Dots height={200} width={200} size={"large"} color={"#6e72fc"} />
+            <Dots height={200} width={200} size={"medium"} color={"#6e72fc"} />
           </div>
         </div>
       </div>
@@ -49,9 +49,9 @@ function Overview() {
           </div>
           <div
             className="shape-wrapper position-absolute opacity-25 "
-            style={{ bottom: 0, left: -50, zIndex: -1 }}
+            style={{ bottom: 0, left: 0, zIndex: -1 }}
           >
-            <Dots height={200} width={200} size={"large"} color={"#6e72fc"} />
+            <Dots height={200} width={200} size={"medium"} color={"#6e72fc"} />
           </div>
         </div>
       </div>

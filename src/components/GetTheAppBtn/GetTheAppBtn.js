@@ -8,7 +8,7 @@ function GetTheAppBtn() {
   return (
     <div
       className="btn-wrapper position-fixed w-100 d-flex justify-content-center d-block d-md-none"
-      style={{ bottom: 50, zIndex: 99 }}
+      style={{ bottom: 20, zIndex: 99 }}
     >
       <button
         type="button"
