@@ -7,6 +7,7 @@ import Steps from "@/components/Steps/Steps";
 import Faqs from "@/components/Faqs/Faqs";
 import Footer from "@/components/Footer/Footer";
 import Marquee from "@/components/Marquee/Marquee";
+import GetTheAppBtn from "@/components/GetTheAppBtn/GetTheAppBtn";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Features />
       {/* <Marquee /> */}
       <Faqs />
+      <GetTheAppBtn />
       <Footer />
     </main>
   );

@@ -1,0 +1,20 @@
+@use "../../styles/variables" as v;
+section {
+  .logo-wrapper {
+    .logo {
+      font-weight: 800;
+      color: v.$main-color;
+      letter-spacing: -2px;
+    }
+  }
+  .content {
+    max-width: v.$wrapper-max-width;
+    margin: auto;
+    padding-inline: 2rem;
+  }
+
+  .header {
+    background-color: v.$main-light;
+    height: 20rem;
+  }
+}

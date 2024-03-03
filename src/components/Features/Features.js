@@ -5,7 +5,7 @@ import Dots from "../Shapes/Dots/Dots";
 
 function Features() {
   return (
-    <section className="features mt-5 d-flex flex-column pt-5">
+    <section className="features mt-5 d-flex flex-column pt-5" id="features">
       <div className="row feature-item gx-5">
         <div className="col-12 col-md-6 d-flex align-items-center">
           <div className="text d-flex flex-column gap-2">

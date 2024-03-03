@@ -9,7 +9,10 @@ import Dots from "../Shapes/Dots/Dots";
 
 function Overview() {
   return (
-    <section className="overview d-flex flex-column align-items-center mb-5">
+    <section
+      className="overview d-flex flex-column align-items-center mb-5"
+      id="overview"
+    >
       <div className="item row d-flex flex-column-reverse flex-md-row mb-5">
         <div className="text col-12 col-md-6 d-flex flex-column justify-content-center">
           <h2 className="fw-bold fs-2 mb-4">Cardless loyalty program</h2>

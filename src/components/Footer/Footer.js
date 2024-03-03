@@ -64,13 +64,16 @@ function Footer() {
             </div>
 
             <div className="items d-flex gap-4 col-12">
-              <Link href={""} className="text-white fw-medium">
+              <Link
+                href={"/terms-and-conditions"}
+                className="text-white fw-medium"
+              >
                 Terms & Conditions
               </Link>
-              <Link href={""} className="text-white fw-medium">
+              <Link href={"/privacy-policy"} className="text-white fw-medium">
                 Privacy Policy
               </Link>
-              <Link href={""} className="text-white fw-medium">
+              <Link href={"/cookie-policy"} className="text-white fw-medium">
                 Cookie Policy
               </Link>
             </div>
