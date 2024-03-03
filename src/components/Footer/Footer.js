@@ -21,6 +21,8 @@ function Footer() {
             <div className="email-input mt-5 d-flex flex-row justify-content-start align-items-center gap-3">
               <input
                 type="text"
+                id="email"
+                name="email"
                 className="p-2 px-4 rounded-pill flex-grow-1 fw-medium"
                 placeholder="Enter your email"
               />
