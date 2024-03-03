@@ -23,7 +23,7 @@ function Features() {
               src={"/designConsoleMockup.jpg"}
               alt="Design console image"
               fill
-              sizes="100vh"
+              sizes="(max-width : 1400px) 31rem, max-width(767px) 35rem, max-width(576px) 20rem"
               style={{ objectFit: "cover" }}
               className="rounded-4"
             />
@@ -51,7 +51,7 @@ function Features() {
               src={"/scanQrMockup.jpg"}
               alt="Design console image"
               fill
-              sizes="100vh"
+              sizes="(max-width : 1400px) 31rem, max-width(767px) 35rem, max-width(576px) 20rem"
               style={{ objectFit: "cover" }}
               className="rounded-4"
             />
@@ -101,7 +101,7 @@ function Features() {
               src={"/rewardMockup.jpg"}
               alt="Design console image"
               fill
-              sizes="100vh"
+              sizes="(max-width : 1400px) 31rem, max-width(767px) 35rem, max-width(576px) 20rem"
               style={{ objectFit: "cover" }}
               className="rounded-4"
             />

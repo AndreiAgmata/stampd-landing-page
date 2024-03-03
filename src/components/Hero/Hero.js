@@ -1,9 +1,12 @@
+"use client";
 import React from "react";
 import "./Hero.scss";
 import Image from "next/image";
 import Dots from "../Shapes/Dots/Dots";
+import { useRouter } from "next/navigation";
 
 function Hero() {
+  const router = useRouter();
   return (
     <section className="hero px-4 position-relative">
       <div
@@ -22,7 +25,14 @@ function Hero() {
             Say goodbye to missing loyalty cards and bulky wallets with our
             mobile loyalty cards. Simplify rewards, no cards needed.
           </p>
-          <button className="btn btn-primary">Get Started For Free</button>
+          <button
+            className="btn btn-primary"
+            onClick={() =>
+              router.push("https://console.stampd.ca/account/register")
+            }
+          >
+            Get Started For Free
+          </button>
         </div>
         <div className="d-none d-md-flex col justify-content-center align-items-center position-relative">
           <div
