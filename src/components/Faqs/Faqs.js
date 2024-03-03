@@ -1,7 +1,8 @@
 "use client";
-import React from "react";
+import React, { useRef, useState } from "react";
 import "./Faqs.scss";
 import faqsData from "../../../public/faqs.json";
+import FaqItem from "../FaqItem/FaqItem";
 
 function Faqs() {
   return (
@@ -13,36 +14,9 @@ function Faqs() {
           smoother, more efficient experience.
         </p>
         <div className="faqs-items d-flex flex-column gap-3">
-          {faqsData
-            .filter(
-              (faq) =>
-                faq.question === "How can I register my business on Stampd?"
-            )
-            .map((faq, index) => (
-              <div className="accordion" id="accordion" key={index}>
-                <div className="accordion-item " key={index}>
-                  <h2 className="accordion-header">
-                    <button
-                      className="accordion-button collapsed fw-bold fs-5 "
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target={`#collapse${index}`}
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      {faq.question}
-                    </button>
-                  </h2>
-                  <div
-                    id={`collapse${index}`}
-                    className="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div className="accordion-body">{faq.answer}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
+          {faqsData.map((faq, index) => (
+            <FaqItem faq={faq} key={index} />
+          ))}
         </div>
       </div>
     </section>
@@ -50,3 +24,29 @@ function Faqs() {
 }
 
 export default Faqs;
+
+{
+  /* <div className="accordion" id="accordion" key={index}>
+<div className="accordion-item " key={index}>
+  <h2 className="accordion-header">
+    <button
+      className="accordion-button collapsed fw-bold fs-5 "
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target={`#collapse${index}`}
+      aria-expanded="false"
+      aria-controls="collapseTwo"
+    >
+      {faq.question}
+    </button>
+  </h2>
+  <div
+    id={`collapse${index}`}
+    className="accordion-collapse collapse"
+    data-bs-parent="#accordionExample"
+  >
+    <div className="accordion-body">{faq.answer}</div>
+  </div>
+</div>
+</div> */
+}
