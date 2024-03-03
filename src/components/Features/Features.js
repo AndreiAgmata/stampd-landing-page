@@ -20,7 +20,7 @@ function Features() {
         <div className="col-12 col-md-6 d-flex position-relative d-flex justify-content-center align-items-center mt-5 mt-md-0">
           <div className="image-wrapper position-relative ">
             <Image
-              src={"/designConsoleMockup.jpg"}
+              src={"/designConsoleMockup.webp"}
               alt="Design console image"
               fill
               sizes="(max-width : 1400px) 31rem, max-width(767px) 35rem, max-width(576px) 20rem"
@@ -48,7 +48,7 @@ function Features() {
         <div className="col-12 col-md-6 d-flex position-relative d-flex justify-content-center align-items-center mt-5 mt-md-0">
           <div className="image-wrapper position-relative ">
             <Image
-              src={"/scanQrMockup.jpg"}
+              src={"/scanQrMockup.webp"}
               alt="Design console image"
               fill
               sizes="(max-width : 1400px) 31rem, max-width(767px) 35rem, max-width(576px) 20rem"
@@ -98,7 +98,7 @@ function Features() {
         <div className="col-12 col-md-6 d-flex position-relative d-flex justify-content-center align-items-center mt-5 mt-md-0">
           <div className="image-wrapper position-relative ">
             <Image
-              src={"/rewardMockup.jpg"}
+              src={"/rewardMockup.webp"}
               alt="Design console image"
               fill
               sizes="(max-width : 1400px) 31rem, max-width(767px) 35rem, max-width(576px) 20rem"
