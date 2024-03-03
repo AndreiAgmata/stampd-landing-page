@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import "./Faqs.scss";
 import faqsData from "../../../public/faqs.json";

@@ -88,8 +88,8 @@ function Features() {
           <div className="text d-flex flex-column gap-2">
             <h2 className="fw-bold">Secure Rewards Transactions</h2>
             <p className="lh-lg">
-              When clients reach the amount of stamps you set. They can only
-              claim your reward once. When a customer clicks on the redeem
+              When clients reach the amount of stamps you set, they can only
+              claim the reward once. After a customer clicks on the redeem
               button, they have 60 seconds to show you the reward voucher or
               their reward is voided.
             </p>

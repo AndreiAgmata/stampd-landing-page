@@ -18,10 +18,9 @@ function Hero() {
             <span className="coloured">Simplify</span> rewards, <br /> no cards
             needed.
           </h1>
-          <p className="subheading mt-3 col-12 col-sm-11 col-md-10">
+          <p className="subheading mt-3 col-12 col-sm-11 col-md-10 lh-lg ">
             Say goodbye to missing loyalty cards and bulky wallets with our
-            hassle-free, streamlined loyalty program solution. Simplify rewards,
-            no cards needed
+            mobile loyalty cards. Simplify rewards, no cards needed.
           </p>
           <button className="btn btn-primary">Get Started For Free</button>
         </div>
