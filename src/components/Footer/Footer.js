@@ -1,16 +1,49 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./Footer.scss";
 import Link from "next/link";
 import Image from "next/image";
 import Dots from "../Shapes/Dots/Dots";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Footer() {
+  let trigger = useRef();
+
+  useEffect(() => {
+    const ctx = new gsap.context(() => {
+      const tl = new gsap.timeline({
+        scrollTrigger: {
+          trigger: trigger,
+          start: "top center+=250",
+          // markers: true,
+          // toggleActions: "play none none reverse",
+        },
+      });
+
+      const q = gsap.utils.selector(trigger);
+
+      tl.fromTo(
+        q(".form-wrapper"),
+        { y: 20, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1, ease: "power3.out" }
+      ).fromTo(
+        q(".iphone"),
+        { y: 20, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1, ease: "power3.out" },
+        "<0.25"
+      );
+    });
+
+    return () => ctx.revert();
+  }, []);
   return (
-    <footer className="footer position-relative">
+    <footer className="footer position-relative" ref={(el) => (trigger = el)}>
       <div className="content">
         <div className="row">
-          <div className="col-12 col-md-7 d-flex flex-column gap-3">
+          <div className="col-12 col-md-7 d-flex flex-column gap-3 form-wrapper">
             <h2 className="title fw-bold text-white">
               Get the latest App Updates
             </h2>
@@ -47,6 +80,7 @@ function Footer() {
                 fill
                 sizes="100vh"
                 style={{ objectFit: "contain" }}
+                className="iphone"
               />
             </div>
             <div

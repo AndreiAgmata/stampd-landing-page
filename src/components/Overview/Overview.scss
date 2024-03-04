@@ -5,6 +5,10 @@
   margin: auto;
   padding-inline: 2rem;
 
+  .coloured {
+    color: v.$main-color;
+  }
+
   .image-wrapper {
     width: 25rem;
     height: auto;

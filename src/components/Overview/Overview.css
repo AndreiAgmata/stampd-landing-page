@@ -3,6 +3,9 @@
   margin: auto;
   padding-inline: 2rem;
 }
+.overview .coloured {
+  color: #6e72fc;
+}
 .overview .image-wrapper {
   width: 25rem;
   height: auto;

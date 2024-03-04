@@ -1,12 +1,27 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./Hero.scss";
 import Image from "next/image";
 import Dots from "../Shapes/Dots/Dots";
 import { useRouter } from "next/navigation";
+import gsap from "gsap";
 
 function Hero() {
   const router = useRouter();
+  let content = useRef();
+
+  useEffect(() => {
+    const ctx = new gsap.context(() => {
+      const tl = new gsap.timeline();
+      tl.fromTo(
+        content,
+        { y: 20, opacity: 0 },
+        { y: 0, opacity: 1, duration: 2, ease: "power3.out" }
+      );
+    });
+
+    return () => ctx.revert();
+  }, []);
   return (
     <section className="hero px-4 position-relative">
       <div
@@ -15,7 +30,7 @@ function Hero() {
       >
         <Dots width={240} height={240} size={"large"} color={"#6e72fc"} />
       </div>
-      <div className="content row w-100 gx-0">
+      <div className="content row w-100 gx-0" ref={(el) => (content = el)}>
         <div className="text col-12 col-sm-9 col-md-7">
           <h1 className="heading fw-bold">
             <span className="coloured">Simplify</span> rewards, <br /> no cards

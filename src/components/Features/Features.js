@@ -1,12 +1,126 @@
-import React from "react";
+"use client";
+import React, { useEffect, useRef } from "react";
 import "./Features.scss";
 import Image from "next/image";
 import Dots from "../Shapes/Dots/Dots";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Features() {
+  let trigger1 = useRef();
+  let trigger2 = useRef();
+  let trigger3 = useRef();
+
+  useEffect(() => {
+    const ctx = new gsap.context(() => {
+      const tl = new gsap.timeline({
+        scrollTrigger: {
+          trigger: trigger1,
+          start: "top center+=250",
+          // markers: true,
+          // toggleActions: "play none none reverse",
+        },
+      });
+
+      let q = gsap.utils.selector(trigger1);
+
+      tl.fromTo(
+        q(".text"),
+        { y: 20, opacity: 0, duration: 0 },
+        { y: 0, opacity: 1, duration: 1, ease: "power3.out" }
+      )
+        .fromTo(
+          q(".image-content"),
+          { x: 20, opacity: 0, duration: 0 },
+          { x: 0, opacity: 1, duration: 1, ease: "power3.out" },
+          "<0.2"
+        )
+        .fromTo(
+          q(".image-shape"),
+          { x: 20, opacity: 0, duration: 0 },
+          { x: 0, opacity: 1, duration: 1, ease: "power3.out" },
+          "<0.2"
+        );
+    });
+
+    return () => ctx.revert();
+  }, []);
+
+  useEffect(() => {
+    const ctx = new gsap.context(() => {
+      const tl = new gsap.timeline({
+        scrollTrigger: {
+          trigger: trigger2,
+          start: "top center+=250",
+          // markers: true,
+          // toggleActions: "play none none reverse",
+        },
+      });
+
+      let q = gsap.utils.selector(trigger2);
+
+      tl.fromTo(
+        q(".text"),
+        { y: 20, opacity: 0, duration: 0 },
+        { y: 0, opacity: 1, duration: 1, ease: "power3.out" }
+      )
+        .fromTo(
+          q(".image-content"),
+          { x: -20, opacity: 0, duration: 0 },
+          { x: 0, opacity: 1, duration: 1, ease: "power3.out" },
+          "<0.2"
+        )
+        .fromTo(
+          q(".image-shape"),
+          { x: -20, opacity: 0, duration: 0 },
+          { x: 0, opacity: 1, duration: 1, ease: "power3.out" },
+          "<0.2"
+        );
+    });
+
+    return () => ctx.revert();
+  }, []);
+
+  useEffect(() => {
+    const ctx = new gsap.context(() => {
+      const tl = new gsap.timeline({
+        scrollTrigger: {
+          trigger: trigger3,
+          start: "top center+=250",
+          // markers: true,
+          // toggleActions: "play none none reverse",
+        },
+      });
+
+      let q = gsap.utils.selector(trigger3);
+
+      tl.fromTo(
+        q(".text"),
+        { y: 20, opacity: 0, duration: 0 },
+        { y: 0, opacity: 1, duration: 1, ease: "power3.out" }
+      )
+        .fromTo(
+          q(".image-content"),
+          { x: 20, opacity: 0, duration: 0 },
+          { x: 0, opacity: 1, duration: 1, ease: "power3.out" },
+          "<0.2"
+        )
+        .fromTo(
+          q(".image-shape"),
+          { x: 20, opacity: 0, duration: 0 },
+          { x: 0, opacity: 1, duration: 1, ease: "power3.out" },
+          "<0.2"
+        );
+    });
+
+    return () => ctx.revert();
+  }, []);
+
   return (
     <section className="features mt-5 d-flex flex-column pt-5" id="features">
-      <div className="row feature-item gx-5">
+      <div className="row feature-item gx-5" ref={(el) => (trigger1 = el)}>
         <div className="col-12 col-md-6 d-flex align-items-center">
           <div className="text d-flex flex-column gap-2">
             <h2 className="fw-bold">Fully Customizable Cards</h2>
@@ -25,7 +139,7 @@ function Features() {
               fill
               sizes="(max-width : 1400px) 31rem, max-width(767px) 35rem, max-width(576px) 20rem"
               style={{ objectFit: "cover" }}
-              className="rounded-4"
+              className="rounded-4 image-content"
             />
             <div
               className="image-shape position-absolute bg-primary rounded-4 "
@@ -44,7 +158,10 @@ function Features() {
           </div>
         </div>
       </div>
-      <div className="row feature-item gx-5 d-flex flex-column-reverse flex-md-row">
+      <div
+        className="row feature-item gx-5 d-flex flex-column-reverse flex-md-row"
+        ref={(el) => (trigger2 = el)}
+      >
         <div className="col-12 col-md-6 d-flex position-relative d-flex justify-content-center align-items-center mt-5 mt-md-0">
           <div className="image-wrapper position-relative ">
             <Image
@@ -53,7 +170,7 @@ function Features() {
               fill
               sizes="(max-width : 1400px) 31rem, max-width(767px) 35rem, max-width(576px) 20rem"
               style={{ objectFit: "cover" }}
-              className="rounded-4"
+              className="rounded-4 image-content"
             />
             <div
               className="image-shape position-absolute bg-primary rounded-4 "
@@ -83,7 +200,7 @@ function Features() {
           </div>
         </div>
       </div>
-      <div className="row feature-item gx-5">
+      <div className="row feature-item gx-5" ref={(el) => (trigger3 = el)}>
         <div className="col-12 col-md-6 d-flex align-items-center">
           <div className="text d-flex flex-column gap-2">
             <h2 className="fw-bold">Secure Rewards Transactions</h2>
@@ -103,7 +220,7 @@ function Features() {
               fill
               sizes="(max-width : 1400px) 31rem, max-width(767px) 35rem, max-width(576px) 20rem"
               style={{ objectFit: "cover" }}
-              className="rounded-4"
+              className="rounded-4 image-content"
             />
             <div
               className="image-shape position-absolute bg-primary rounded-4 "
