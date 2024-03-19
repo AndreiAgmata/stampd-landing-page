@@ -5,6 +5,7 @@
 }
 .hero .content {
   padding-top: min(35vw, 13rem);
+  opacity: 0;
 }
 .hero .content .text .heading {
   font-size: clamp(2.25rem, 5.5vw, 3.5rem);
