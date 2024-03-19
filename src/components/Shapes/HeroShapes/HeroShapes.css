@@ -13,6 +13,7 @@
   transform: rotate(-50deg);
   top: -14rem;
   right: -17rem;
+  opacity: 0;
 }
 
 .shape-light {
@@ -22,4 +23,5 @@
   transform: rotate(-50deg);
   top: -9rem;
   right: -18rem;
+  opacity: 0;
 }/*# sourceMappingURL=HeroShapes.css.map */

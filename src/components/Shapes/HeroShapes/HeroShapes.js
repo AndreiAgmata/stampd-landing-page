@@ -17,6 +17,7 @@ function HeroShapes() {
         {
           y: 0,
           x: 0,
+          opacity: 1,
           duration: 1,
           ease: "power3.out",
           delay: 0.75,
@@ -27,6 +28,7 @@ function HeroShapes() {
         {
           y: 0,
           x: 0,
+          opacity: 1,
           duration: 1,
           ease: "power3.out",
         },
