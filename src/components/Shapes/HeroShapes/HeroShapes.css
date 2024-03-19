@@ -10,15 +10,16 @@
   width: 51rem;
   height: 37rem;
   background-color: #6e72fc;
+  transform: rotate(-50deg);
   top: -14rem;
   right: -17rem;
-  transform: rotate(-50deg);
 }
+
 .shape-light {
   width: 51rem;
   height: 37rem;
   background-color: rgba(110, 115, 252, 0.3803921569);
+  transform: rotate(-50deg);
   top: -9rem;
   right: -18rem;
-  transform: rotate(-50deg);
 }/*# sourceMappingURL=HeroShapes.css.map */

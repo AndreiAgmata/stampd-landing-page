@@ -11,61 +11,16 @@
   width: 51rem;
   height: 37rem;
   background-color: #6e72fc;
-
+  transform: rotate(-50deg);
   top: -14rem;
   right: -17rem;
-  transform: rotate(-50deg);
-
-  @media (min-width: 1400px) {
-  }
 }
 
 .shape-light {
   width: 51rem;
   height: 37rem;
   background-color: #6e73fc61;
-
+  transform: rotate(-50deg);
   top: -9rem;
   right: -18rem;
-  transform: rotate(-50deg);
-
-  @media (min-width: 1400px) {
-  }
 }
-
-// .shapes {
-//     //   width: 100%;
-//     max-width: 1440px;
-//     //   min-width: 1100px;
-//     height: 1rem;
-
-//     margin: auto;
-//     position: relative;
-//     z-index: -1;
-//   }
-
-//   .shape-dark {
-//     width: 51rem;
-//     height: 37rem;
-//     background-color: #6e72fc;
-
-//     top: -14rem;
-//     right: -17rem;
-//     transform: rotate(-50deg);
-
-//     @media (min-width: 1400px) {
-//     }
-//   }
-
-//   .shape-light {
-//     width: 51rem;
-//     height: 37rem;
-//     background-color: #6e73fc61;
-
-//     top: -9rem;
-//     right: -18rem;
-//     transform: rotate(-50deg);
-
-//     @media (min-width: 1400px) {
-//     }
-//   }

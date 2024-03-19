@@ -11,17 +11,22 @@ function HeroShapes() {
     const ctx = new gsap.context(() => {
       const tl = new gsap.timeline();
 
-      tl.from(shapeDark, {
-        y: -1000,
-        x: 1000,
-        duration: 1,
-        ease: "power3.out",
-        delay: 0.75,
-      }).from(
-        shapeLight,
+      tl.fromTo(
+        shapeDark,
+        { y: -1000, x: 1000 },
         {
-          y: -1000,
-          x: 1000,
+          y: 0,
+          x: 0,
+          duration: 1,
+          ease: "power3.out",
+          delay: 0.75,
+        }
+      ).fromTo(
+        shapeLight,
+        { y: -1000, x: 1000 },
+        {
+          y: 0,
+          x: 0,
           duration: 1,
           ease: "power3.out",
         },
