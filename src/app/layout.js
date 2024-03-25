@@ -1,6 +1,6 @@
 import { Poppins } from "next/font/google";
 import "@/styles/index.scss";
-import Navbar from "@/components/Navbar/Navbar";
+
 // import BootstrapClient from "@/clients/BootstrapClient";
 
 const poppins = Poppins({
@@ -16,10 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
-        <Navbar />
-        {children}
-      </body>
+      <body className={poppins.className}>{children}</body>
 
       {/* <BootstrapClient /> */}
     </html>

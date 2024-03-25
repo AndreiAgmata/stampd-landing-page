@@ -6,10 +6,7 @@ function Notfound() {
   const router = useRouter();
 
   return (
-    <section
-      className="not-found d-flex flex-column justify-content-center align-items-center h-100"
-      style={{ marginTop: "-4rem" }}
-    >
+    <section className="not-found d-flex flex-column justify-content-center align-items-center h-100">
       <h1 className="text-primary fw-bold" style={{ fontSize: "7rem" }}>
         404
       </h1>
