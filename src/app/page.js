@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main>
       <HeroShapes />
-      <Navbar />
+
       <Hero />
       <Overview />
       <Steps />
